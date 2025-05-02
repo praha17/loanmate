@@ -1,0 +1,102 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Hero Section */
+.bg-primary {
+    background-color: #007bff !important;
+}
+
+.hero-section {
+    padding: 80px 0;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
+/* About Section */
+.container {
+    max-width: 1100px;
+}
+
+.about-section img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about-section h2 {
+    color: #007bff;
+}
+
+/* Mission Section */
+.bg-light {
+    background-color: #f1f1f1 !important;
+}
+
+.mission-section {
+    padding: 50px 0;
+}
+
+.mission-section h2 {
+    color: #007bff;
+    font-size: 2.5rem;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 50px 0;
+}
+
+.why-choose-us h2 {
+    font-size: 2.5rem;
+    color: #007bff;
+}
+
+.why-choose-us .col-md-4 {
+    padding: 20px;
+}
+#title h1 {
+    font-size: 5rem; /* Adjust size as needed */
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.why-choose-us img {
+    width: 80px;
+    height: 80px;
+}
+
+/* Call to Action */
+.bg-dark {
+    background-color: #222 !important;
+    padding: 60px 0;
+}
+
+.bg-dark h2 {
+    font-size: 2.5rem;
+}
+
+.bg-dark p {
+    font-size: 1.2rem;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}

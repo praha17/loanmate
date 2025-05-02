@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIN LINK</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+  integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header class="p-3 text-bg-dark">
+      <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+          <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"></use></svg>
+          </a>
+  
+          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+            <li><a href="./index (2).html" class="nav-link px-2 text-secondary">Home</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+            <li><a href="./whychooseus.html" class="nav-link px-2 text-white">Why Choose Us?</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+            <li><a href="./terms.html" class="nav-link px-2 text-white">Terms of Service</a></li>
+            <li><a href="#" class="nav-link px-2 text-white">Loan Calculator</a></li>
+            <li><a href="./aboutus.html" class="nav-link px-2 text-white">About</a></li>
+          </ul>
+  
+          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+            <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+          </form>
+  
+          <div class="text-end">
+            <button type="button" class="btn btn-outline-light me-2">Login</button>
+            <a href="./terms.html" class="btn btn-warning">Sign-up</a>
+          </div>
+          
+        </div>
+      </div>
+    </header>
+
+    <!-- Title -->
+    <section id="title" class="gradient-background">
+      <div class="px-4 py-5 my-5 text-center">
+        <h1 class="display-5 fw-bold text-body-emphasis">FINLINK</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-4">
+            Connect Directly. <br> 
+            Borrow Smartly. <br> 
+            Invest Wisely.
+        </p>
+        
+          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Borrowers -->
+    <section id="borrowers">
+      <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-lg-7 text-center text-lg-start">
+            <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">For Borrowers</h1>
+            <p class="col-lg-10 fs-4">For Borrowers: Apply for a Loan, Get Matched with Lenders, Receive Funds, Repay with Ease</p>
+          </div>
+          <div class="col-md-10 mx-auto col-lg-5">
+            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" action="/submit" method="POST">
+              <h2 class="fw-bold mb-3">Apply for a Loan</h2>
+    
+              <!-- Name Input -->
+              <div class="form-floating mb-3">
+                <input type="text" name="name" class="form-control" id="floatingName" placeholder="John Doe" required>
+                <label for="floatingName">Full Name</label>
+              </div>
+    
+              <!-- Email Input -->
+              <div class="form-floating mb-3">
+                <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                <label for="floatingInput">Email address</label>
+              </div>
+    
+              <!-- Password Input -->
+              <div class="form-floating mb-3">
+                <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                <label for="floatingPassword">Password</label>
+              </div>
+    
+              <!-- Remember Me -->
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me" name="rememberMe"> Remember me
+                </label>
+              </div>
+    
+              <!-- Submit Button -->
+              <button class="w-100 btn btn-lg btn-primary" type="submit">Receive Funds</button>
+    
+              <!-- Terms and Conditions -->
+              <hr class="my-4">
+              <small class="text-body-secondary">By clicking Receive Funds, you agree to the terms of use.</small>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Lenders -->
+    <section id="lenders">
+      <div class="container col-xl-10 col-xxl-8 px-4 py-5">
+        <div class="row align-items-center g-lg-5 py-5">
+          <div class="col-md-5">
+            <form class="p-4 p-md-5 border rounded-3 bg-body-tertiary" action="http://localhost:3000/login-lender" method="POST">
+              <h2 class="fw-bold mb-3">Invest & Diversify</h2>
+    
+              <!-- Name Input -->
+              <div class="form-floating mb-3">
+                <input type="text" name="name" class="form-control" id="floatingName" placeholder="John Doe" required>
+                <label for="floatingName">Full Name</label>
+              </div>
+    
+              <!-- Email Input -->
+              <div class="form-floating mb-3">
+                <input type="email" name="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                <label for="floatingInput">Email address</label>
+              </div>
+    
+              <!-- Password Input -->
+              <div class="form-floating mb-3">
+                <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password" required>
+                <label for="floatingPassword">Password</label>
+              </div>
+    
+              <!-- Remember Me -->
+              <div class="checkbox mb-3">
+                <label>
+                  <input type="checkbox" value="remember-me"> Remember me
+                </label>
+              </div>
+    
+              <!-- Submit Button -->
+              <button class="w-100 btn btn-lg btn-primary" type="submit">Track Portfolio</button>
+    
+              <!-- Terms and Conditions -->
+              <hr class="my-4">
+              <small class="text-body-secondary">By clicking Track Portfolio, you agree to the terms of use.</small>
+            </form>
+          </div>
+    
+          <div class="col-md-7 text-start">
+            <h1 class="display-4 fw-bold lh-1 text-body-emphasis mb-3">For Lenders</h1>
+            <p class="col-lg-10 fs-4">For Lenders: Browse Loan Requests, Invest & Diversify, Earn Interest, Track Portfolio</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Choose Us Section -->
+    <section id="choose-us">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-10 col-sm-8 col-lg-6">
+            <img src="./corporate-business-handshake-business-partners.jpg" class="d-block mx-lg-auto img-fluid" alt="business people handshake" width="500" height="500" loading="lazy">
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Why Choose Us?</h1>
+            <p class="lead">Modern lending platforms offer lower interest rates by reducing operational costs and using advanced risk assessment to personalize loan terms. Lenders benefit from high returns as they bypass traditional banking intermediaries, investing directly in borrowers with risk-adjusted pricing. Credit risk assessment enhances accuracy by analyzing diverse data sources, enabling faster and more reliable loan approvals. Secure transactions are ensured through encryption, blockchain, and smart contracts, protecting both lenders and borrowers from fraud. This innovative approach creates a seamless, efficient, and profitable lending ecosystem.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+      <div class="container px-4 py-5" id="icon-grid">
+        <h2 class="pb-2 border-bottom">Features</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"></use></svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Instant Loan Processing</h3>
+              <p>Quick approvals and fast disbursement</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"></use></svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Smart Risk Analysis</h3>
+              <p>Advanced algorithms and machine learning</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cloud"></use></svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Secure Transactions</h3>
+              <p>End-to-end encrypted for peace of mind</p>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#support"></use></svg>
+            <div>
+              <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">24/7 Customer Support</h3>
+              <p>Always available to assist you, day or night</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="./home.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">FAQs</a></li>
+            <li class="nav-item"><a href="./aboutus.html" class="nav-link px-2 text-body-secondary">About</a></li>
+          </ul>
+          <p class="text-center text-body-secondary">© 2025 Company, Inc</p>
+        </footer>
+      </div>
+    </section>
+</body>
+
+</html>

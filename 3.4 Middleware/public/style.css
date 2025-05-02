@@ -1,0 +1,37 @@
+#red{
+    color: red;
+    font-weight: normal;
+}
+
+#blue{
+    color: rgb(0, 149, 207);
+    font-weight: normal;
+}
+
+
+#orange{
+    color: orange;
+    font-weight: normal;
+    
+}
+
+#green{
+    color: green;
+    font-weight: normal;
+    
+}
+
+#yellow{
+    color: yellow;
+    font-weight: normal;
+    
+}
+
+img{
+    height: 200px;
+    width:200px;
+}
+
+html{
+    background: FFF4F4;
+}
