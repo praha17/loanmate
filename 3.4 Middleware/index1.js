@@ -18,17 +18,30 @@ app.use(express.static("public"));
 // To use morgan 
 app.use(morgan("tiny"));
 
-
 // Serve home.html
 app.get("/", (req, res) => {
+  console.log(__dirname + "/public/home.html");
   res.sendFile(__dirname + "/public/home.html");
 });
 
-// Handle form submission
-app.post("/submit", (req, res) => {
-  console.log("Borroower Data:", req.body); // This should show your form data now!
-  res.send("Thank you for applying!");
+// Serve borrower.html
+app.get("/borrower", (req, res) => {
+  console.log(__dirname + "/public/borrower.html");
+  res.sendFile(__dirname + "/public/borrower.html");
 });
+
+// After form submission, redirect to borrower page
+app.post("/submit", (req, res) => {
+  const { name, email, loanAmount } = req.body;
+  console.log("Received Application:", name, email, loanAmount);
+  res.send("Loan Application Received Successfully!");
+});
+
+// Handle form submission
+///app.post("/submit", (req, res) => {
+  //console.log("Borroower Data:", req.body); // This should show your form data now!
+  ///res.send("Thank you for applying!");
+///});
 app.post("/login-lender", (req, res) => {
   console.log("Lender Data:", req.body);
   res.send("Lender login received! 💼");
